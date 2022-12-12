@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>
+        <script>
+            function myfunction()
+            {
+                let a,b,sum;
+                a=parseInt(document.getElementById("Text1").value);
+                b=parseInt(document.getElementById("Text2").value);
+                sum=a+b;
+                document.getElementById("Text3").value=sum;
+            }
+        </script>
+        <label>Enter first Input</label>
+        <input type="Text" id="Text1"><br>
+        <label>Enter Second Input</label>
+        <input type="Text" id="Text2"><br>
+        <label>result is</label><input type="Text" id="Text3">
+        <input type="Submit" onclick="myfunction();" >
+    </body>
+</html>

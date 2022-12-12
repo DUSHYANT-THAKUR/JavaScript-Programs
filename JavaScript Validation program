@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script>
+       function validate()
+       {
+        let n=document.myform.Name.value;
+        if(n==""|| n.length<3||n.length>10)
+        {
+            alert("please provide valid name");
+            document.myform.Name.focus();
+            return false;
+        }
+        let emp_id=document.myform.id.value;
+        if(emp_id==""||emp_id<100 || emp_id>500)
+            {
+                alert("please provide valid id");
+                document.myform.id.focus();
+                return false;
+            }
+            let mob_no=document.myform.phone.value;
+            if(mob_no==""||n<66666666666 && n>9999999999)
+                {
+                    alert("please provide valid phone number");
+                    document.myform.phone.focus();
+                    return false;
+                }
+                let count=document.myform.country.value;
+                if(count=="-1")
+                {
+                    alert("please select contry");
+                    document.myform.country.focus();
+                    return false;
+                }
+       }
+        </script>
+    </head>
+    <body>
+        <form name="myform" onclick="validate();">
+            
+            <label>Name</label>
+            <input type="text" name="Name" value="name" ><br>
+
+            <label>Employee Id</label>
+            <input type="text" name="id" value="102"><br>
+
+            <label>Employee Gmail</label>
+            <input type="text" name="Gmail" ><br>
+
+            <label for="Mobile No">Mobile NO</label>
+            <input type="text" name="phone" value="7777777777" ><br>
+
+            <label>Country</label>
+            <select name="country">
+                <option value="-1">SELECT</option>
+                <option value="1">India</option>
+                <option value="2">Pakistan</option>
+                <option value="3">England</option>
+                <option value="4">USA</option>
+                <option value="5">NEW zealand</option>
+            </select>
+            </label>
+
+        </form>
+    </body>
+</html>

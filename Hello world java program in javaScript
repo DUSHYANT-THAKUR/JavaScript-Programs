@@ -1,0 +1,8 @@
+<html>
+<body>
+    <p id="demo">hello javascript</p>
+<script>
+    document.getElementById("demo").innerHTML="Welcome to javascript";
+</script>
+</body>
+</html>

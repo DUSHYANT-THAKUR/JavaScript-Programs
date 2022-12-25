@@ -1,0 +1,39 @@
+
+
+<html>
+<body>
+<script>
+var stack=new Array();
+var top=-1;
+function push()
+{
+    if(top==stack.length-1)
+    {
+        document.write("the stack is full");
+    }
+    else
+    {
+        top++;
+        let item=parseInt(prompt("enter the item to be pushed="));
+        stack[top]=item;
+    }
+}
+function pop()
+{
+  if(top==-1)
+  {
+     document.write("stack is empty");
+  }
+  else
+  {
+       let item=stack[top];
+      document.write("the deleted item is="+item);
+      top--;
+  }
+}
+    
+</script>
+<button type="button" onclick="push()">click for push</button>
+<button type="button" onclick="pop()">click for push</button>
+</body>
+</html>

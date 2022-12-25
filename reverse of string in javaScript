@@ -1,0 +1,17 @@
+<html>
+<body>
+    <p id="demo">hello</p>
+<script>
+    function fun()
+    {
+        var str=prompt("enter the value of a =");
+      var spt=str.split('');
+      var rev=spt.reverse();
+      var jon=rev.join('');
+      
+   document.getElementById("demo").innerHTML="the reverse of string is ="+jon;
+    }
+</script>
+<button type="button" onclick="fun()">click me</button>
+</body>
+</html>

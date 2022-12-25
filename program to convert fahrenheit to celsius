@@ -1,0 +1,14 @@
+<html>
+<body>
+    <p id="demo">hello</p>
+<script>
+    function fun()
+    {
+        let f=parseInt(prompt("enter the value of a ="));
+       let res=((f-32)*5)/9;
+   document.getElementById("demo").innerHTML="the value of res="+res;
+    }
+</script>
+<button type="button" onclick="fun()">click me</button>
+</body>
+</html>

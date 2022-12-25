@@ -1,0 +1,22 @@
+<html>
+<body>
+    <p id="demo">hello</p>
+<script>
+    function fun()
+    {
+    var arr = new Array();
+ for(let i=0;i<5;i++)
+ {
+ arr[i]=parseInt(prompt("enter the element "+i+"="));
+}
+
+//var points = new Array(40, 100, 1);
+for(let i=0;i<5;i++)
+{
+document.write(arr[i]); 
+}
+}
+</script>
+<button type="button" onclick="fun()">click me</button>
+</body>
+</html>

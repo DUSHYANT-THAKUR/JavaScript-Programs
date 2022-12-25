@@ -1,0 +1,38 @@
+<html>
+<body>
+<script>
+var queue=new Array();
+var front=-1,rear=-1;
+function enqueue()
+{
+   if(front=0 && rear==queue.length-1)
+   {
+       document.write("the queue is full");
+   }
+   else
+   {
+       front=0;
+       rear++;
+       var item=parseInt(prompt("enter the item="));
+       queue[rear]=item;
+   }
+}
+function dequeue()
+{
+  if(front==-1)
+  {
+      document.write("queue is empty");
+  }
+  else
+  {
+      var item=queue[front];
+      document.write("the deleted item is="+item);
+      front++;
+  }
+}
+    
+</script>
+<button type="button" onclick="enqueue()">click for insertion</button>
+<button type="button" onclick="dequeue()">click for deletion</button>
+</body>
+</html>

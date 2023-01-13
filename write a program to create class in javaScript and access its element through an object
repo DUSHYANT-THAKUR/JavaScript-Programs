@@ -1,0 +1,20 @@
+<html>
+<body>
+<script>
+  
+  class Student
+  {
+      constructor(id,name)
+      {
+          this.id=id;
+          this.name=name;
+      }
+      
+  }
+  const obj=new Student(1,"dushyant");
+  
+  document.write(obj.id);
+  document.write(obj.name);
+</script>
+</body>
+</html>
